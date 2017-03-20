@@ -1,0 +1,313 @@
+ <!--type="company"
+		 block="block/kadapapa.js" 
+		 generator="generator/kadapapa.js"  
+		 lib="kadapapa" 
+		 hardware="hardware/kadapapa"
+		 media="media/kadapapa"
+		 language="language/kadapapa"
+		 pin="companypin/kadapapa"-->
+ 
+<script type="text/javascript" src="../../blocks/company/kadapapa.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/kadapapa.js"></script>
+<category id="catkadapapa" name="kadapapa" colour="#DB4288">
+    <!--==============================Output==============================-->
+    <block type="runWdigital"></block>
+    <block type="runPwm">
+        <value name="Pwm">           <!--定义模块内部默认值，name必须与appendValueInput内name相同-->
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="runLed"></block>
+    <block type="runVibrator"></block>
+    <block type="runDigition">
+        <value name="num">
+            <shadow type="math_number">
+                <field name="NUM">123</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="runRGB"></block>
+    <block type="runServo">
+        <value name="Angle">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="runMotor">
+        <value name="Speed">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="runBuzzer">
+        <value name="Tonality">
+            <shadow type="Buzzer_Tones">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="Beat">
+            <shadow type="Buzzer_Beats">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
+    <!--==============================Analog Input==============================-->
+    <block type="getAnalog"></block>
+    <block type="getLightSensor"></block>
+    <block type="getSoundSensor"></block>
+    <block type="getShake"></block>
+    <block type="getPressure"></block>
+    <!--<block type="getGasSensor"></block>-->
+    <block type="getFlameSensor"></block>
+    <!--<block type="getTVOCSensor"></block>-->
+    <block type="getTemperature"></block>
+    <block type="getHumidity"></block>
+    <block type="getHumiture"></block>
+    <block type="getUltrasonic"></block>
+    <!--<block type="getInfrared"></block>-->
+    <block type="getGyro"></block>
+    <!--<block type="getPM25"></block>-->
+    <!--<block type="getAirMonitors"></block>-->
+    <!--<block type="getCo2"></block>-->
+    <!--<block type="getTimer"></block>-->
+    <!--==============================Digital Input==============================-->
+    <block type="getDigital"></block>
+    <block type="getLinefollower"></block>
+    <block type="getLimitswitch"></block>
+    <block type="getButtonswitch"></block>
+    <block type="getSelfholdswitch"></block>
+    <block type="getPirmotion"></block>
+    <block type="getFourkey"></block>
+    <!--<block type="getIrRemote"></block>-->
+    <block type="getTouchkey"></block>
+    <!--<block type="getRFID"></block>-->
+    <!--==============================TFT Screen==============================-->
+
+    <block type="runFillScreen"></block>
+
+    <block type="runDrawLine">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x1value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y1value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runDrawRect">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x1value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y1value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runDrawCircle">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="rvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runDrawTriangle">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x1value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y1value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x2value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y2value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runFillRect">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x1value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y1value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runFillCircle">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="rvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runFillTriangle">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x1value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y1value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="x2value">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="y2value">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runDrawChar">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="svalue">
+            <shadow type="math_number">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="cvalue">
+            <shadow type="text_char">
+                <field name="TEXT">k</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="runText">
+        <value name="xvalue">
+            <shadow type="TFT_Coords_X">
+                <field name="NUM">3</field>
+            </shadow>
+        </value>
+        <value name="yvalue">
+            <shadow type="TFT_Coords_Y">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="svalue">
+            <shadow type="math_number">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+        <value name="cvalue">
+            <shadow type="text">
+                <field name="TEXT">Kadapapa</field>
+            </shadow>
+        </value>
+    </block>
+
+    <!--<block type="runInvertDisplay"></block>-->
+
+    <block type="runSetRotation"></block>
+
+</category>
